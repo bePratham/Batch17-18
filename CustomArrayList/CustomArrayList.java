@@ -23,7 +23,7 @@ public class CustomArrayList {
     private boolean isFull() {
         return size == data.length;
     }
-    private String remove(){
+    public String remove(){
         String remove = data[--size];
         return remove;
     }

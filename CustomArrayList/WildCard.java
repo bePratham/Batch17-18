@@ -1,15 +1,15 @@
 package CustomArrayList;
 
 import java.util.Arrays;
-
-public class WildCard <C extends Number> {
+// To make our input specific type ...Use wild Card
+public class WildCard <C extends Object> {
     private Object[] data;
     private static int DEFAULT_SIZE = 10;
     public int size = 0;
     public WildCard(){
         this.data =new Object[DEFAULT_SIZE];
     }
-    public void add(int i){
+    public void add(C i){
         if(isFull()) resize();
         data[size++] = i;
     }

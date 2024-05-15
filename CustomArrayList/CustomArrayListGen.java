@@ -9,7 +9,7 @@ public class CustomArrayListGen<T> {
     public CustomArrayListGen(){
         this.data =new Object[DEFAULT_SIZE];
     }
-    public void add(double d){
+    public void add(T d){
         if(isFull()) resize();
         data[size++] = d;
     }
