@@ -6,8 +6,13 @@ public class Main {
         MyCounter counter1 = new MyCounter(1);
         MyCounter counter2 = new MyCounter(2);
 
-        counter1.CountMe();
-        counter2.CountMe();
+        // counter1.CountMe();
+        // counter2.CountMe();
+
+        counter1.start();
+        counter2.start();
+        Thread.sleep(5100);
+
         long endTime =System.currentTimeMillis();
         System.out.println("Total time taken by my system :- "+(endTime-startTime));
  
